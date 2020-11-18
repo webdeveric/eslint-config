@@ -5,5 +5,5 @@ This is my [shared ESLint config](http://eslint.org/docs/developer-guide/shareab
 ## Installation
 
 ```shell
-npm install @webdeveric/eslint-config-babel --save-dev
+npm install @babel/core @webdeveric/eslint-config-babel --save-dev
 ```

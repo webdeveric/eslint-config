@@ -5,5 +5,5 @@ This is my [shared ESLint config](http://eslint.org/docs/developer-guide/shareab
 ## Installation
 
 ```shell
-npm install @webdeveric/eslint-config-ts --save-dev
+npm install typescript @webdeveric/eslint-config-ts --save-dev
 ```
