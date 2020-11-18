@@ -1,0 +1,43 @@
+{
+  "name": "@webdeveric/eslint-config-babel",
+  "version": "0.0.0",
+  "description": "My ESLint config for Babel projects",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --fix -c index.js *.js --parser-options=requireConfigFile:false",
+    "prepublishOnly": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webdeveric/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "webdeveric"
+  ],
+  "author": {
+    "name": "Eric King",
+    "email": "eric@webdeveric.com",
+    "url": "http://webdeveric.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webdeveric/eslint-config/issues"
+  },
+  "homepage": "https://github.com/webdeveric/eslint-config#readme",
+  "peerDependencies": {
+    "eslint": ">= 4"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/eslint-parser": "^7.12.1",
+    "@webdeveric/eslint-config": "^0.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0"
+  }
+}

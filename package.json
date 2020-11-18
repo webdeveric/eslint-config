@@ -3,8 +3,10 @@
   "private": true,
   "scripts": {
     "lerna": "lerna",
+    "clean": "lerna clean",
     "lint": "lerna run lint",
-    "bootstrap": "lerna bootstrap"
+    "bootstrap": "lerna bootstrap",
+    "bootstrap:local": "lerna bootstrap --force-local && lerna link --force-local"
   },
   "devDependencies": {
     "lerna": "^3.22.1"

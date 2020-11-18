@@ -1,0 +1,44 @@
+{
+  "name": "@webdeveric/eslint-config-ts",
+  "version": "0.0.0",
+  "description": "My ESLint config for Typescript projects",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --fix -c index.js *.js",
+    "prepublishOnly": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webdeveric/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "webdeveric"
+  ],
+  "author": {
+    "name": "Eric King",
+    "email": "eric@webdeveric.com",
+    "url": "http://webdeveric.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webdeveric/eslint-config/issues"
+  },
+  "homepage": "https://github.com/webdeveric/eslint-config#readme",
+  "peerDependencies": {
+    "eslint": ">= 4"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
+    "@webdeveric/eslint-config": "^0.0.0",
+    "typescript": ">=3"
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0"
+  }
+}
