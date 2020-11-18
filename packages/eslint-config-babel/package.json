@@ -1,6 +1,6 @@
 {
   "name": "@webdeveric/eslint-config-babel",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "My ESLint config for Babel projects",
   "publishConfig": {
     "access": "public"
@@ -30,8 +30,8 @@
   },
   "homepage": "https://github.com/webdeveric/eslint-config#readme",
   "peerDependencies": {
-    "eslint": ">= 4",
-    "@babel/core": ">=7"
+    "@babel/core": ">=7",
+    "eslint": ">= 4"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.12.1",
