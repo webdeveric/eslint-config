@@ -1,0 +1,12 @@
+{
+  "name": "@webdeveric/eslint-config-mono-repo",
+  "private": true,
+  "scripts": {
+    "lerna": "lerna",
+    "lint": "lerna run lint",
+    "bootstrap": "lerna bootstrap"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
