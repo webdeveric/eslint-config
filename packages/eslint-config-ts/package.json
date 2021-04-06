@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --fix -c index.js *.js",
+    "lint": "eslint --fix index.js",
     "prepublishOnly": "npm run lint"
   },
   "repository": {
@@ -40,6 +40,6 @@
   },
   "devDependencies": {
     "eslint": "^7.13.0",
-    "typescript": "^4.0.5"
+    "typescript": "^4.1.2"
   }
 }
