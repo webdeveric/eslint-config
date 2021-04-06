@@ -10,6 +10,9 @@ const NEVER = 'never';
 
 module.exports = {
   extends: 'eslint:recommended',
+  parserOptions: {
+    ecmaVersion: 2018,
+  },
   env: {
     browser: true,
     node: true,
