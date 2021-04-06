@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   extends: [
     '@webdeveric/eslint-config',
@@ -6,6 +8,10 @@ module.exports = {
   ],
   plugins: [ '@typescript-eslint' ],
   parser: '@typescript-eslint/parser',
+  rules: {
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 'error',
+  },
   overrides: [
     {
       files: [ '*.js' ],
