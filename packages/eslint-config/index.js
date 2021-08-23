@@ -9,142 +9,25 @@ const AS_NEEDED = 'as-needed';
 const NEVER = 'never';
 
 module.exports = {
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
   extends: 'eslint:recommended',
   parserOptions: {
     ecmaVersion: 2018,
   },
-  env: {
-    browser: true,
-    node: true,
-    es6: true,
-  },
   rules: {
-    'prefer-const': [
-      ERROR,
-      {
-        destructuring: 'all',
-      },
-    ],
-    'sort-imports': [
-      ERROR,
-      {
-        ignoreCase: true,
-        ignoreDeclarationSort: false,
-        ignoreMemberSort: false,
-        memberSyntaxSortOrder: [ 'none', 'all', 'multiple', 'single' ],
-        allowSeparatedGroups: true,
-      },
-    ],
-    'no-console': OFF,
-    quotes: [
-      WARN,
-      'single',
-    ],
-    'eol-last': ERROR,
-    'no-multiple-empty-lines': [
+    'array-bracket-newline': [
       WARN,
       {
-        max: 1,
-        maxBOF: 0,
-        maxEOF: 1,
+        multiline: true,
       },
     ],
-    indent: [
-      ERROR,
-      2,
-      {
-        SwitchCase: 1,
-      },
-    ],
-    'no-mixed-requires': OFF,
-    'no-underscore-dangle': OFF,
-    strict: [
-      ERROR,
-      'safe',
-    ],
-    'no-var': ERROR,
-    'no-unused-vars': ERROR,
-    semi: [
-      ERROR,
+    'array-bracket-spacing': [
+      WARN,
       ALWAYS,
-    ],
-    'no-use-before-define': ERROR,
-    'no-undef': ERROR,
-    'comma-spacing': [
-      ERROR,
-      {
-        before: false,
-        after: true,
-      },
-    ],
-    'comma-style': [
-      ERROR,
-      'last',
-    ],
-    'comma-dangle': [
-      WARN,
-      'always-multiline',
-    ],
-    'func-call-spacing': [
-      ERROR,
-      NEVER,
-    ],
-    'new-parens': WARN,
-    'padded-blocks': [
-      ERROR,
-      NEVER,
-    ],
-    'lines-between-class-members': [
-      ERROR,
-      ALWAYS,
-    ],
-    'padding-line-between-statements': [
-      ERROR,
-      {
-        blankLine: ALWAYS,
-        prev: '*',
-        next: 'return',
-      },
-      {
-        blankLine: ALWAYS,
-        prev: [
-          'const',
-          'let',
-          'var',
-        ],
-        next: '*',
-      },
-      {
-        blankLine: 'any',
-        prev: [
-          'const',
-          'let',
-          'var',
-        ],
-        next: [
-          'const',
-          'let',
-          'var',
-        ],
-      },
-      {
-        blankLine: ALWAYS,
-        prev: 'directive',
-        next: '*',
-      },
-      {
-        blankLine: 'any',
-        prev: 'directive',
-        next: 'directive',
-      },
-    ],
-    'space-before-function-paren': [
-      ERROR,
-      {
-        anonymous: NEVER,
-        named: NEVER,
-        asyncArrow: ALWAYS,
-      },
     ],
     'arrow-parens': [
       WARN,
@@ -153,66 +36,24 @@ module.exports = {
     'arrow-spacing': [
       ERROR,
       {
-        before: true,
         after: true,
-      },
-    ],
-    'key-spacing': [
-      ERROR,
-      {
-        beforeColon: false,
-        afterColon: true,
-        mode: 'strict',
-      },
-    ],
-    'keyword-spacing': [
-      ERROR,
-      {
         before: true,
-        after: true,
       },
     ],
-    'array-bracket-newline': [
+    'comma-dangle': [
       WARN,
-      {
-        multiline: true,
-      },
+      'always-multiline',
     ],
-    'space-infix-ops': [
-      ERROR,
-      {
-        int32Hint: true,
-      },
-    ],
-    'space-unary-ops': [
-      ERROR,
-      {
-        words: true,
-        nonwords: false,
-        overrides: {
-          '!': true,
-        },
-      },
-    ],
-    'spaced-comment': [
-      ERROR,
-      ALWAYS,
-    ],
-    'switch-colon-spacing': [
+    'comma-spacing': [
       ERROR,
       {
         after: true,
         before: false,
       },
     ],
-    'template-tag-spacing': [
+    'comma-style': [
       ERROR,
-      NEVER,
-    ],
-    'space-in-parens': OFF,
-    'array-bracket-spacing': [
-      WARN,
-      ALWAYS,
+      'last',
     ],
     'computed-property-spacing': [
       WARN,
@@ -225,22 +66,71 @@ module.exports = {
       ERROR,
       'all',
     ],
+    'eol-last': ERROR,
+    'func-call-spacing': [
+      ERROR,
+      NEVER,
+    ],
+    indent: [
+      ERROR,
+      2,
+      {
+        SwitchCase: 1,
+      },
+    ],
+    'key-spacing': [
+      ERROR,
+      {
+        afterColon: true,
+        beforeColon: false,
+        mode: 'strict',
+      },
+    ],
+    'keyword-spacing': [
+      ERROR,
+      {
+        after: true,
+        before: true,
+      },
+    ],
+    'lines-between-class-members': [
+      ERROR,
+      ALWAYS,
+    ],
+    'new-parens': WARN,
+    'no-console': OFF,
+    'no-mixed-requires': OFF,
+    'no-multiple-empty-lines': [
+      WARN,
+      {
+        max: 1,
+        maxBOF: 0,
+        maxEOF: 1,
+      },
+    ],
+    'no-promise-executor-return': ERROR,
+    'no-throw-literal': ERROR,
+    'no-undef': ERROR,
+    'no-underscore-dangle': OFF,
+    'no-unused-vars': ERROR,
+    'no-use-before-define': ERROR,
+    'no-var': ERROR,
     'object-curly-newline': [
       ERROR,
       {
+        ExportDeclaration: {
+          minProperties: 3,
+          multiline: true,
+        },
+        ImportDeclaration: {
+          minProperties: 3,
+          multiline: true,
+        },
         ObjectExpression: {
           consistent: true,
         },
         ObjectPattern: {
           multiline: true,
-        },
-        ImportDeclaration: {
-          multiline: true,
-          minProperties: 3,
-        },
-        ExportDeclaration: {
-          multiline: true,
-          minProperties: 3,
         },
       },
     ],
@@ -254,9 +144,131 @@ module.exports = {
         allowAllPropertiesOnSameLine: true,
       },
     ],
+    'padded-blocks': [
+      ERROR,
+      NEVER,
+    ],
+    'padding-line-between-statements': [
+      ERROR,
+      {
+        blankLine: ALWAYS,
+        next: 'return',
+        prev: '*',
+      },
+      {
+        blankLine: ALWAYS,
+        next: '*',
+        prev: [
+          'const',
+          'let',
+          'var',
+        ],
+      },
+      {
+        blankLine: 'any',
+        next: [
+          'const',
+          'let',
+          'var',
+        ],
+        prev: [
+          'const',
+          'let',
+          'var',
+        ],
+      },
+      {
+        blankLine: ALWAYS,
+        next: '*',
+        prev: 'directive',
+      },
+      {
+        blankLine: 'any',
+        next: 'directive',
+        prev: 'directive',
+      },
+    ],
+    'prefer-const': [
+      ERROR,
+      {
+        destructuring: 'all',
+      },
+    ],
+    'prefer-promise-reject-errors': ERROR,
     'quote-props': [
       WARN,
       AS_NEEDED,
+    ],
+    quotes: [
+      WARN,
+      'single',
+    ],
+    semi: [
+      ERROR,
+      ALWAYS,
+    ],
+    'sort-imports': [
+      ERROR,
+      {
+        allowSeparatedGroups: true,
+        ignoreCase: true,
+        ignoreDeclarationSort: false,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: [ 'none', 'all', 'multiple', 'single' ],
+      },
+    ],
+    'sort-keys': [
+      OFF,
+      'asc',
+      {
+        caseSensitive: true,
+        minKeys: 2,
+        natural: true,
+      },
+    ],
+    'space-before-function-paren': [
+      ERROR,
+      {
+        anonymous: NEVER,
+        asyncArrow: ALWAYS,
+        named: NEVER,
+      },
+    ],
+    'space-in-parens': OFF,
+    'space-infix-ops': [
+      ERROR,
+      {
+        int32Hint: true,
+      },
+    ],
+    'space-unary-ops': [
+      ERROR,
+      {
+        nonwords: false,
+        overrides: {
+          '!': true,
+        },
+        words: true,
+      },
+    ],
+    'spaced-comment': [
+      ERROR,
+      ALWAYS,
+    ],
+    strict: [
+      ERROR,
+      'safe',
+    ],
+    'switch-colon-spacing': [
+      ERROR,
+      {
+        after: true,
+        before: false,
+      },
+    ],
+    'template-tag-spacing': [
+      ERROR,
+      NEVER,
     ],
   },
 };
