@@ -1,4 +1,15 @@
 {
   "root": true,
-  "extends": "./packages/eslint-config"
+  "extends": "./packages/eslint-config",
+  "rules": {
+    "sort-keys": [
+      "error",
+      "asc",
+      {
+        "caseSensitive": true,
+        "minKeys": 2,
+        "natural": true
+      }
+    ]
+  }
 }
