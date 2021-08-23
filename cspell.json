@@ -1,6 +1,13 @@
 {
-    "version": "0.1",
-    "words": [
-        "nonwords"
-    ]
+  "version": "0.1",
+  "words": [
+    "eslintconfig",
+    "nonwords",
+    "webdeveric"
+  ],
+  "ignorePaths": [
+    "package-lock.json",
+    "node_modules",
+    "private"
+  ]
 }

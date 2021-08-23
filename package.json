@@ -6,9 +6,23 @@
     "clean": "lerna clean",
     "lint": "lerna run lint",
     "bootstrap": "lerna bootstrap",
-    "bootstrap:local": "lerna bootstrap --force-local && lerna link --force-local"
+    "bootstrap:local": "lerna bootstrap --force-local && lerna link --force-local",
+    "spellcheck": "cspell --no-progress './**/*'",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --cache --fix"
+    ],
+    "*.{js,json,md}": [
+      "cspell --no-progress --no-summary --no-must-find-files"
+    ]
   },
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "@webdeveric/prettier-config": "^0.1.0",
+    "cspell": "^5.8.0",
+    "husky": "^7.0.1",
+    "lerna": "^4.0.0",
+    "lint-staged": "^11.1.2"
   }
 }
