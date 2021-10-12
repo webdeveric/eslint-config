@@ -21,9 +21,9 @@
   "devDependencies": {
     "@webdeveric/prettier-config": "^0.1.0",
     "cspell": "^5.8.0",
-    "eslint": "^7.32.0",
-    "husky": "^7.0.1",
+    "eslint": "^8.0.0",
+    "husky": "^7.0.2",
     "lerna": "^4.0.0",
-    "lint-staged": "^11.1.2"
+    "lint-staged": "^11.2.3"
   }
 }

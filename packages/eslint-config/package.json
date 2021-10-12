@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/webdeveric/eslint-config#readme",
   "devDependencies": {
-    "eslint": "^7.13.0"
+    "eslint": "^8.0.0"
   },
   "peerDependencies": {
     "eslint": ">= 4"
