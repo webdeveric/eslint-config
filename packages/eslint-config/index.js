@@ -71,6 +71,14 @@ module.exports = {
       ERROR,
       NEVER,
     ],
+    'id-length': [
+      ERROR,
+      {
+        exceptions: [ '_', 'i', 'j' ],
+        min: 2,
+        properties: 'never',
+      },
+    ],
     indent: [
       ERROR,
       2,
