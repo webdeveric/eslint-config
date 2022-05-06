@@ -8,6 +8,7 @@
     "bootstrap": "lerna bootstrap",
     "bootstrap:local": "lerna bootstrap --force-local && lerna link --force-local",
     "spellcheck": "cspell --no-progress './**/*'",
+    "format": "prettier --write ./**/*.json ./packages/**/*.js",
     "prepare": "husky install"
   },
   "lint-staged": {
@@ -15,14 +16,20 @@
       "eslint --cache --fix"
     ],
     "*.{js,json,md}": [
-      "cspell --no-progress --no-summary --no-must-find-files"
+      "cspell --no-progress --no-summary --no-must-find-files",
+      "prettier --write"
     ]
   },
+  "prettier": "@webdeveric/prettier-config",
   "devDependencies": {
-    "cspell": "^5.12.3",
-    "eslint": "^8.1.0",
+    "@webdeveric/prettier-config": "^0.2.0",
+    "cspell": "^5.20.0",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
     "lerna": "^4.0.0",
-    "lint-staged": "^11.2.4"
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2"
   }
 }

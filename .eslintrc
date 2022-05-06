@@ -1,6 +1,9 @@
 {
   "root": true,
-  "extends": "./packages/eslint-config",
+  "extends": [
+    "./packages/eslint-config",
+    "plugin:prettier/recommended"
+  ],
   "rules": {
     "sort-keys": [
       "error",
