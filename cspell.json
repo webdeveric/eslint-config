@@ -1,15 +1,5 @@
 {
-  "version": "0.1",
-  "words": [
-    "camelcase",
-    "destructured",
-    "eslintconfig",
-    "nonwords",
-    "webdeveric"
-  ],
-  "ignorePaths": [
-    "package-lock.json",
-    "node_modules",
-    "private"
-  ]
+  "version": "0.2",
+  "words": ["camelcase", "destructured", "eslintconfig", "nonwords", "webdeveric"],
+  "ignorePaths": ["package-lock.json", "node_modules", "private", ".vscode"]
 }
