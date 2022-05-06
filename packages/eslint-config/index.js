@@ -25,14 +25,8 @@ module.exports = {
         multiline: true,
       },
     ],
-    'array-bracket-spacing': [
-      WARN,
-      ALWAYS,
-    ],
-    'arrow-parens': [
-      WARN,
-      AS_NEEDED,
-    ],
+    'array-bracket-spacing': [WARN, ALWAYS],
+    'arrow-parens': [WARN, AS_NEEDED],
     'arrow-spacing': [
       ERROR,
       {
@@ -40,10 +34,7 @@ module.exports = {
         before: true,
       },
     ],
-    'comma-dangle': [
-      WARN,
-      'always-multiline',
-    ],
+    'comma-dangle': [WARN, 'always-multiline'],
     'comma-spacing': [
       ERROR,
       {
@@ -51,10 +42,7 @@ module.exports = {
         before: false,
       },
     ],
-    'comma-style': [
-      ERROR,
-      'last',
-    ],
+    'comma-style': [ERROR, 'last'],
     'computed-property-spacing': [
       WARN,
       ALWAYS,
@@ -62,19 +50,13 @@ module.exports = {
         enforceForClassMembers: true,
       },
     ],
-    curly: [
-      ERROR,
-      'all',
-    ],
+    curly: [ERROR, 'all'],
     'eol-last': ERROR,
-    'func-call-spacing': [
-      ERROR,
-      NEVER,
-    ],
+    'func-call-spacing': [ERROR, NEVER],
     'id-length': [
       ERROR,
       {
-        exceptions: [ '_', 'i', 'j' ],
+        exceptions: ['_', 'i', 'j'],
         min: 2,
         properties: 'never',
       },
@@ -101,10 +83,7 @@ module.exports = {
         before: true,
       },
     ],
-    'lines-between-class-members': [
-      ERROR,
-      ALWAYS,
-    ],
+    'lines-between-class-members': [ERROR, ALWAYS],
     'new-parens': WARN,
     'no-console': OFF,
     'no-mixed-requires': OFF,
@@ -142,20 +121,14 @@ module.exports = {
         },
       },
     ],
-    'object-curly-spacing': [
-      WARN,
-      ALWAYS,
-    ],
+    'object-curly-spacing': [WARN, ALWAYS],
     'object-property-newline': [
       ERROR,
       {
         allowAllPropertiesOnSameLine: true,
       },
     ],
-    'padded-blocks': [
-      ERROR,
-      NEVER,
-    ],
+    'padded-blocks': [ERROR, NEVER],
     'padding-line-between-statements': [
       ERROR,
       {
@@ -166,24 +139,12 @@ module.exports = {
       {
         blankLine: ALWAYS,
         next: '*',
-        prev: [
-          'const',
-          'let',
-          'var',
-        ],
+        prev: ['const', 'let', 'var'],
       },
       {
         blankLine: 'any',
-        next: [
-          'const',
-          'let',
-          'var',
-        ],
-        prev: [
-          'const',
-          'let',
-          'var',
-        ],
+        next: ['const', 'let', 'var'],
+        prev: ['const', 'let', 'var'],
       },
       {
         blankLine: ALWAYS,
@@ -203,18 +164,9 @@ module.exports = {
       },
     ],
     'prefer-promise-reject-errors': ERROR,
-    'quote-props': [
-      WARN,
-      AS_NEEDED,
-    ],
-    quotes: [
-      WARN,
-      'single',
-    ],
-    semi: [
-      ERROR,
-      ALWAYS,
-    ],
+    'quote-props': [WARN, AS_NEEDED],
+    quotes: [WARN, 'single'],
+    semi: [ERROR, ALWAYS],
     'sort-imports': [
       ERROR,
       {
@@ -222,7 +174,7 @@ module.exports = {
         ignoreCase: true,
         ignoreDeclarationSort: false,
         ignoreMemberSort: false,
-        memberSyntaxSortOrder: [ 'none', 'all', 'multiple', 'single' ],
+        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
       },
     ],
     'sort-keys': [
@@ -259,14 +211,8 @@ module.exports = {
         words: true,
       },
     ],
-    'spaced-comment': [
-      ERROR,
-      ALWAYS,
-    ],
-    strict: [
-      ERROR,
-      'safe',
-    ],
+    'spaced-comment': [ERROR, ALWAYS],
+    strict: [ERROR, 'safe'],
     'switch-colon-spacing': [
       ERROR,
       {
@@ -274,9 +220,6 @@ module.exports = {
         before: false,
       },
     ],
-    'template-tag-spacing': [
-      ERROR,
-      NEVER,
-    ],
+    'template-tag-spacing': [ERROR, NEVER],
   },
 };
