@@ -1,5 +1,7 @@
 'use strict';
 
+const { getNamingConvention } = require('./naming-convention.js');
+
 module.exports = {
   extends: [
     '@webdeveric/eslint-config',
@@ -8,73 +10,32 @@ module.exports = {
   ],
   overrides: [
     {
-      files: [ '*.js' ],
+      files: ['*.js'],
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
       },
     },
-  ],
-  parser: '@typescript-eslint/parser',
-  plugins: [ '@typescript-eslint' ],
-  rules: {
-    '@typescript-eslint/naming-convention': [
-      'error',
-      {
-        format: [ 'camelCase' ],
-        selector: 'default',
-      },
-      {
-        format: [ 'camelCase' ],
-        leadingUnderscore: 'allow',
-        selector: 'parameter',
-      },
-      {
-        format: [ 'camelCase' ],
-        leadingUnderscore: 'allow',
-        modifiers: [ 'private' ],
-        selector: 'memberLike',
-      },
-      {
-        format: [ 'PascalCase' ],
-        selector: 'typeLike',
-      },
-      {
-        format: [ 'PascalCase' ],
-        selector: 'enumMember',
-      },
-      {
-        format: [ 'camelCase' ],
-        selector: 'variable',
-      },
-      {
-        format: [ 'camelCase', 'UPPER_CASE' ],
-        modifiers: [ 'const' ],
-        selector: 'variable',
-      },
-      {
-        format: [ 'camelCase', 'PascalCase', 'UPPER_CASE' ],
-        selector: [ 'objectLiteralProperty', 'typeProperty' ],
-      },
-      {
-        format: null,
-        modifiers: [ 'requiresQuotes' ],
-        selector: [
-          'classProperty',
-          'objectLiteralProperty',
-          'typeProperty',
-          'classMethod',
-          'objectLiteralMethod',
-          'typeMethod',
-          'accessor',
-          'enumMember',
+    {
+      files: ['*.tsx'],
+      rules: {
+        '@typescript-eslint/naming-convention': [
+          'error',
+          ...getNamingConvention([
+            {
+              format: ['camelCase', 'PascalCase'],
+              selector: ['variable'],
+              types: ['function'],
+            },
+          ]),
         ],
       },
-      {
-        format: null,
-        modifiers: [ 'destructured' ],
-        selector: 'variable',
-      },
-    ],
+    },
+  ],
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint'],
+  rules: {
+    '@typescript-eslint/naming-convention': ['error', ...getNamingConvention()],
+    '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/no-use-before-define': 'error',
     camelcase: 'off',
     'no-use-before-define': 'off',
