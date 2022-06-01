@@ -16,6 +16,12 @@ module.exports = {
       },
     },
     {
+      files: ['*.js', '*.cjs', '*.mjs'],
+      rules: {
+        '@typescript-eslint/explicit-function-return-type': 'off',
+      },
+    },
+    {
       files: ['*.tsx'],
       rules: {
         '@typescript-eslint/naming-convention': [
