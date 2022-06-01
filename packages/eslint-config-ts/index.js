@@ -10,7 +10,7 @@ module.exports = {
   ],
   overrides: [
     {
-      files: ['*.js'],
+      files: ['*.js', '*.cjs', '*.cts'],
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
       },
@@ -34,6 +34,12 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   rules: {
+    '@typescript-eslint/explicit-function-return-type': [
+      'error',
+      {
+        allowExpressions: true,
+      },
+    ],
     '@typescript-eslint/naming-convention': ['error', ...getNamingConvention()],
     '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/no-use-before-define': 'error',
