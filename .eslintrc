@@ -2,7 +2,7 @@
   "root": true,
   "extends": [
     "./packages/eslint-config",
-    "plugin:prettier/recommended"
+    "prettier"
   ],
   "rules": {
     "sort-keys": [

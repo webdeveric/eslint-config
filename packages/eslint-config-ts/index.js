@@ -40,6 +40,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   rules: {
+    '@typescript-eslint/consistent-type-assertions': ['error', { assertionStyle: 'as' }],
     '@typescript-eslint/explicit-function-return-type': [
       'error',
       {
@@ -49,6 +50,8 @@ module.exports = {
     '@typescript-eslint/naming-convention': ['error', ...getNamingConvention()],
     '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/no-use-before-define': 'error',
+    '@typescript-eslint/unbound-method': 'error',
+    '@typescript-eslint/unified-signatures': 'warn',
     camelcase: 'off',
     'no-use-before-define': 'off',
   },
