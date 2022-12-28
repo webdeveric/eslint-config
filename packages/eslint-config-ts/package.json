@@ -1,6 +1,6 @@
 {
   "name": "@webdeveric/eslint-config-ts",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "description": "My ESLint config for Typescript projects",
   "publishConfig": {
     "access": "public"
@@ -36,7 +36,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
-    "@webdeveric/eslint-config": "^0.2.4"
+    "@webdeveric/eslint-config": "^0.3.0"
   },
   "devDependencies": {
     "eslint": "^8.0.0",
