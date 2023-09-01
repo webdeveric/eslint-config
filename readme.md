@@ -4,11 +4,10 @@ This repo contains my [shared ESLint configs](http://eslint.org/docs/developer-g
 
 ## Local setup
 
-1. `npm install`
-1. `npm run bootstrap`
+1. `pnpm install`
 
 ## Linting all packages
 
 ```shell
-npm run lint
+pnpm lint
 ```
