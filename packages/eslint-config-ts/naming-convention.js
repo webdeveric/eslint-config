@@ -36,6 +36,7 @@ function getNamingConvention(extraRules = []) {
     },
     {
       format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
+      leadingUnderscore: 'allow',
       selector: ['objectLiteralProperty', 'typeProperty'],
     },
     {
