@@ -35,10 +35,10 @@
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.12.1",
-    "@webdeveric/eslint-config": "^0.3.0"
+    "@webdeveric/eslint-config": "workspace:*"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.8",
-    "eslint": "^8.0.0"
+    "@babel/core": "^7.22.8",
+    "eslint": "^8.44.0"
   }
 }
