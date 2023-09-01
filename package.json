@@ -1,12 +1,11 @@
 {
   "name": "@webdeveric/eslint-config-mono-repo",
   "private": true,
+  "packageManager": "pnpm@8.7.1",
   "scripts": {
     "lerna": "lerna",
     "clean": "lerna clean",
     "lint": "lerna run lint",
-    "bootstrap": "lerna bootstrap",
-    "bootstrap:local": "lerna bootstrap --force-local && lerna link --force-local",
     "spellcheck": "cspell --no-progress './**/*'",
     "format": "prettier --write ./**/*.json ./packages/**/*.js",
     "prepare": "husky install"
@@ -23,12 +22,12 @@
   "prettier": "@webdeveric/prettier-config",
   "devDependencies": {
     "@webdeveric/prettier-config": "^0.2.0",
-    "cspell": "^6.18.0",
-    "eslint": "^8.30.0",
-    "eslint-config-prettier": "^8.5.0",
-    "husky": "^8.0.2",
-    "lerna": "^6.3.0",
-    "lint-staged": "^13.1.0",
-    "prettier": "^2.8.1"
+    "cspell": "^7.3.2",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.3",
+    "lerna": "^7.2.0",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3"
   }
 }

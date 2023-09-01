@@ -36,6 +36,12 @@ module.exports = {
         ],
       },
     },
+    {
+      files: ['**/*.test.ts'],
+      rules: {
+        '@typescript-eslint/no-explicit-any': 'off',
+      },
+    },
   ],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
@@ -49,6 +55,8 @@ module.exports = {
     ],
     '@typescript-eslint/naming-convention': ['error', ...getNamingConvention()],
     '@typescript-eslint/no-floating-promises': 'error',
+    '@typescript-eslint/no-misused-promises': 'error',
+    '@typescript-eslint/no-unused-expressions': ['error', { allowShortCircuit: true }],
     '@typescript-eslint/no-use-before-define': 'error',
     '@typescript-eslint/unbound-method': 'error',
     '@typescript-eslint/unified-signatures': 'warn',
