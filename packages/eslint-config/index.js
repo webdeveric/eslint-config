@@ -34,6 +34,20 @@ module.exports = {
         before: true,
       },
     ],
+    'capitalized-comments': [
+      'error',
+      'always',
+      {
+        block: {
+          ignoreConsecutiveComments: false,
+          ignoreInlineComments: true,
+          ignorePattern: 'ignored',
+        },
+        line: {
+          ignorePattern: '.',
+        },
+      },
+    ],
     'comma-dangle': [WARN, 'always-multiline'],
     'comma-spacing': [
       ERROR,
@@ -102,6 +116,7 @@ module.exports = {
     'lines-between-class-members': [ERROR, ALWAYS],
     'new-parens': WARN,
     'no-console': OFF,
+    'no-constant-binary-expression': ERROR,
     'no-mixed-requires': OFF,
     'no-multiple-empty-lines': [
       WARN,
@@ -112,6 +127,17 @@ module.exports = {
       },
     ],
     'no-promise-executor-return': ERROR,
+    'no-restricted-imports': [
+      ERROR,
+      {
+        paths: [
+          {
+            message: 'Please use full paths to imports',
+            name: '..',
+          },
+        ],
+      },
+    ],
     'no-throw-literal': ERROR,
     'no-undef': ERROR,
     'no-underscore-dangle': OFF,
