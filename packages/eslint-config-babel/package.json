@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --fix *.js",
-    "prepublishOnly": "npm run lint"
+    "prepublishOnly": "pnpm lint"
   },
   "repository": {
     "type": "git",
@@ -34,11 +34,11 @@
     "eslint": ">= 4"
   },
   "dependencies": {
-    "@babel/eslint-parser": "^7.12.1",
+    "@babel/eslint-parser": "^7.23.10",
     "@webdeveric/eslint-config": "workspace:*"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.8",
-    "eslint": "^8.44.0"
+    "@babel/core": "^7.23.9",
+    "eslint": "^8.56.0"
   }
 }

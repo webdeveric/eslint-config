@@ -8,7 +8,7 @@
     "lint": "lerna run lint",
     "spellcheck": "cspell --no-progress './**/*'",
     "format": "prettier --write ./**/*.json ./packages/**/*.js",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "lint-staged": {
     "*.js": [
@@ -22,12 +22,12 @@
   "prettier": "@webdeveric/prettier-config",
   "devDependencies": {
     "@webdeveric/prettier-config": "^0.2.0",
-    "cspell": "^7.3.2",
-    "eslint": "^8.48.0",
-    "eslint-config-prettier": "^9.0.0",
-    "husky": "^8.0.3",
-    "lerna": "^7.2.0",
-    "lint-staged": "^14.0.1",
-    "prettier": "^3.0.3"
+    "cspell": "^8.3.2",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.0.10",
+    "lerna": "^8.1.2",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5"
   }
 }
