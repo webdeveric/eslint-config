@@ -1,7 +1,7 @@
 {
   "name": "@webdeveric/eslint-config-mono-repo",
   "private": true,
-  "packageManager": "pnpm@8.7.1",
+  "packageManager": "pnpm@8.15.1+sha256.245fe901f8e7fa8782d7f17d32b6a83995e2ae03984cb5b62b8949bfdc27c7b5",
   "scripts": {
     "lerna": "lerna",
     "clean": "lerna clean",
