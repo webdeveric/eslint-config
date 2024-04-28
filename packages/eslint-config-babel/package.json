@@ -34,11 +34,11 @@
     "eslint": ">= 4"
   },
   "dependencies": {
-    "@babel/eslint-parser": "^7.23.10",
+    "@babel/eslint-parser": "^7.24.1",
     "@webdeveric/eslint-config": "workspace:*"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.9",
-    "eslint": "^8.56.0"
+    "@babel/core": "^7.24.4",
+    "eslint": "^8.57.0"
   }
 }
