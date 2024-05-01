@@ -5,6 +5,7 @@ This repo contains my [shared ESLint configs](http://eslint.org/docs/developer-g
 ## Local setup
 
 ```shell
+corepack enable
 pnpm install
 ```
 
