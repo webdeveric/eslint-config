@@ -58,6 +58,10 @@ function getNamingConvention(extraRules = []) {
       modifiers: ['destructured'],
       selector: 'variable',
     },
+    {
+      format: ['camelCase', 'PascalCase'],
+      selector: ['import'],
+    },
     ...extraRules,
   ];
 
