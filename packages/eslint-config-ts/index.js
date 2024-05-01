@@ -29,7 +29,7 @@ module.exports = {
           ...getNamingConvention([
             {
               format: ['camelCase', 'PascalCase'],
-              selector: ['variable'],
+              selector: ['variable', 'function'],
               types: ['function'],
             },
           ]),
