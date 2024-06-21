@@ -1,6 +1,6 @@
 {
   "name": "@webdeveric/eslint-config-ts",
-  "version": "0.7.3",
+  "version": "0.8.0",
   "description": "My ESLint config for Typescript projects",
   "publishConfig": {
     "access": "public"
