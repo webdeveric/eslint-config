@@ -1,2 +1,5 @@
 packages:
-  - "packages/*"
+  - 'packages/*'
+
+catalog:
+  eslint: ^8.57.0
