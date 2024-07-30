@@ -47,6 +47,7 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   rules: {
     '@typescript-eslint/consistent-type-assertions': ['error', { assertionStyle: 'as' }],
+    '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
     '@typescript-eslint/explicit-function-return-type': [
       'error',
       {
@@ -55,6 +56,7 @@ module.exports = {
     ],
     '@typescript-eslint/naming-convention': ['error', ...getNamingConvention()],
     '@typescript-eslint/no-floating-promises': 'error',
+    '@typescript-eslint/no-import-type-side-effects': 'error',
     '@typescript-eslint/no-misused-promises': 'error',
     '@typescript-eslint/no-unused-expressions': ['error', { allowShortCircuit: true }],
     '@typescript-eslint/no-use-before-define': 'error',
