@@ -19,6 +19,7 @@ module.exports = {
       files: ['*.js', '*.cjs', '*.mjs'],
       rules: {
         '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
       },
     },
     {
@@ -46,6 +47,14 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   rules: {
+    '@typescript-eslint/adjacent-overload-signatures': 'error',
+    '@typescript-eslint/array-type': [
+      'error',
+      {
+        default: 'array-simple',
+      },
+    ],
+    '@typescript-eslint/consistent-generic-constructors': 'error',
     '@typescript-eslint/consistent-type-assertions': ['error', { assertionStyle: 'as' }],
     '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
     '@typescript-eslint/explicit-function-return-type': [
@@ -54,15 +63,21 @@ module.exports = {
         allowExpressions: true,
       },
     ],
+    '@typescript-eslint/explicit-module-boundary-types': 'error',
     '@typescript-eslint/naming-convention': ['error', ...getNamingConvention()],
+    '@typescript-eslint/no-confusing-non-null-assertion': 'error',
+    '@typescript-eslint/no-duplicate-enum-values': 'error',
     '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/no-import-type-side-effects': 'error',
     '@typescript-eslint/no-misused-promises': 'error',
+    '@typescript-eslint/no-shadow': 'error',
+    '@typescript-eslint/no-unnecessary-parameter-property-assignment': 'error',
     '@typescript-eslint/no-unused-expressions': ['error', { allowShortCircuit: true }],
     '@typescript-eslint/no-use-before-define': 'error',
     '@typescript-eslint/unbound-method': 'error',
     '@typescript-eslint/unified-signatures': 'warn',
     camelcase: 'off',
+    'no-shadow': 'off',
     'no-use-before-define': 'off',
   },
 };

@@ -140,6 +140,7 @@ module.exports = {
         ],
       },
     ],
+    'no-shadow': ERROR,
     'no-template-curly-in-string': ERROR,
     'no-throw-literal': ERROR,
     'no-undef': ERROR,
