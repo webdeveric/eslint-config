@@ -65,6 +65,7 @@ module.exports = {
       },
     ],
     curly: [ERROR, 'all'],
+    'default-param-last': ERROR,
     'eol-last': ERROR,
     eqeqeq: ['error', 'smart'],
     'func-call-spacing': [ERROR, NEVER],

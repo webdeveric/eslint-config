@@ -51,12 +51,13 @@ module.exports = {
     '@typescript-eslint/array-type': [
       'error',
       {
-        default: 'array-simple',
+        default: 'array',
       },
     ],
     '@typescript-eslint/consistent-generic-constructors': 'error',
     '@typescript-eslint/consistent-type-assertions': ['error', { assertionStyle: 'as' }],
     '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
+    '@typescript-eslint/default-param-last': 'error',
     '@typescript-eslint/explicit-function-return-type': [
       'error',
       {
@@ -77,6 +78,7 @@ module.exports = {
     '@typescript-eslint/unbound-method': 'error',
     '@typescript-eslint/unified-signatures': 'warn',
     camelcase: 'off',
+    'default-param-last': 'off',
     'no-shadow': 'off',
     'no-use-before-define': 'off',
   },
