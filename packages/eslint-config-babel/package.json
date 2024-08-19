@@ -1,6 +1,6 @@
 {
   "name": "@webdeveric/eslint-config-babel",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "My ESLint config for Babel projects",
   "publishConfig": {
     "access": "public"
