@@ -75,6 +75,7 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-parameter-property-assignment': 'error',
     '@typescript-eslint/no-unused-expressions': ['error', { allowShortCircuit: true }],
     '@typescript-eslint/no-use-before-define': 'error',
+    '@typescript-eslint/prefer-regexp-exec': 'error',
     '@typescript-eslint/unbound-method': 'error',
     '@typescript-eslint/unified-signatures': 'warn',
     camelcase: 'off',
