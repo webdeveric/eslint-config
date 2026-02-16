@@ -22,12 +22,12 @@
   "prettier": "@webdeveric/prettier-config",
   "devDependencies": {
     "@webdeveric/prettier-config": "^0.3.0",
-    "cspell": "^8.14.1",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0",
-    "husky": "^9.1.4",
-    "lerna": "^8.1.8",
-    "lint-staged": "^15.2.9",
-    "prettier": "^3.3.3"
+    "cspell": "^9.6.4",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lerna": "^9.0.4",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.8.1"
   }
 }
