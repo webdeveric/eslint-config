@@ -1,8 +1,8 @@
 packages:
   - packages/*
 
+allowBuilds:
+  nx: true
+
 catalog:
   eslint: ^8.57.1
-
-onlyBuiltDependencies:
-  - nx
