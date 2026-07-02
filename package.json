@@ -1,13 +1,14 @@
 {
   "name": "@webdeveric/eslint-config-mono-repo",
   "private": true,
-  "packageManager": "pnpm@11.2.0+sha512.cdd7e34ea0d237bed3fa89e633185027e3ecdad98ce7453032f4d4d83c10cb7b85b9afe8534048ab0a3cc10228bdd5e32f5f622d05d66e58f46177fe5601eab1",
+  "packageManager": "pnpm@11.9.0+sha512.bd682d5d03fe525ef7c9fd6780c6884d1e756ac4c9c9fe00c538782824310dcf90e3ddc4f53835f06dfaebd5085e41855e0bcbb3b60de2ac5bbab89e5036f03b",
   "scripts": {
     "lerna": "lerna",
     "clean": "lerna clean",
     "lint": "lerna run lint",
     "spellcheck": "cspell --no-progress './**/*'",
     "format": "prettier --write ./**/*.json ./packages/**/*.js",
+    "validate": "validate-package-exports --info --check ./packages/*/package.json",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -22,12 +23,13 @@
   "prettier": "@webdeveric/prettier-config",
   "devDependencies": {
     "@webdeveric/prettier-config": "^0.4.0",
-    "cspell": "^10.0.0",
+    "cspell": "^10.0.1",
     "eslint": "catalog:",
     "eslint-config-prettier": "^10.1.8",
     "husky": "^9.1.7",
     "lerna": "^9.0.7",
-    "lint-staged": "^17.0.5",
-    "prettier": "^3.8.3"
+    "lint-staged": "^17.0.8",
+    "prettier": "^3.9.4",
+    "validate-package-exports": "^1.2.0"
   }
 }
